@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CompassTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Compass" translatesAutoresizingMaskIntoConstraints="NO" id="M1r-7J-KaI">
+                                <rect key="frame" x="60" y="344" width="294" height="218"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Needle" translatesAutoresizingMaskIntoConstraints="NO" id="3vQ-iD-yt5">
+                                <rect key="frame" x="60" y="404" width="294" height="98"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M1r-7J-KaI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="1ZR-Wp-nbP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3vQ-iD-yt5" secondAttribute="bottom" constant="360" id="5Jj-I8-NCP"/>
+                            <constraint firstItem="3vQ-iD-yt5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="BVZ-7m-4Te"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M1r-7J-KaI" secondAttribute="trailing" constant="60" id="BeM-qg-XkY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M1r-7J-KaI" secondAttribute="bottom" constant="300" id="CJU-DK-qbz"/>
+                            <constraint firstItem="3vQ-iD-yt5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="ODP-Uu-iZw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3vQ-iD-yt5" secondAttribute="trailing" constant="60" id="eMH-Pp-1hx"/>
+                            <constraint firstItem="3vQ-iD-yt5" firstAttribute="centerX" secondItem="M1r-7J-KaI" secondAttribute="centerX" id="iAI-CO-dcq"/>
+                            <constraint firstItem="M1r-7J-KaI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="u2r-xX-iO5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="compassImageView" destination="M1r-7J-KaI" id="44M-MJ-6HE"/>
+                        <outlet property="needleImageView" destination="3vQ-iD-yt5" id="sll-zH-Oi6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Compass" width="346" height="346"/>
+        <image name="Needle" width="44" height="143"/>
+    </resources>
+</document>
